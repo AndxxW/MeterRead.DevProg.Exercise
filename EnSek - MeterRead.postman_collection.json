@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "621d0715-37e4-4bb7-9c83-35403aae0380",
+		"name": "EnSek - MeterRead",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10941105"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5014/meter-reading-uploads",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/andyx/Desktop/Meter_Reading.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5014/meter-reading-uploads?file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5014",
+					"path": [
+						"meter-reading-uploads"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
